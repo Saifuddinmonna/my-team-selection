@@ -43,16 +43,35 @@ document.getElementById("btn-6").addEventListener("click", function (){
 
 document.getElementById('calculate').addEventListener('click', function () {
 	const perplayercost = getInputValue("per-player-cost");
-	let oderlistid = document.getElementById("selected-li");
+	const oderlistid = document.getElementById("selected-li");
 	let linumbers = oderlistid.childElementCount;
 	const linumbernumber = parseFloat(linumbers);
-	const allPlayerCost =linumbers*perplayercost;
+	let allPlayerCost = linumbers * perplayercost;
 	console.log(allPlayerCost);
-	const totalplayercostid = document.getElementById("total-player-expenses");
+	let totalplayercostid = document.getElementById("total-player-expenses");
+	const totalplayercosttext = totalplayercostid.innerText;
 	totalplayercostid.innerText = allPlayerCost;
-	// const totalplayercost = ;
+	const totalplayercoststring = totalplayercostid.innerText;
+	const totalplayercostnumber = parseFloat(totalplayercoststring); 
+
+	// total cost codinr start from here 
+	document
+		.getElementById("total-cost")
+		.addEventListener("click", function () {
+			// manager cost
+
+			const managercost = getInputValue("manager-cost");
+			console.log(managercost);
+
+			//  coachcost
+			const coachcost = getInputValue("coach-cost");
+			console.log(coachcost);
+			const totalcost = totalplayercostnumber + managercost + coachcost;
+			console.log(totalcost);
+			const totalcosttextfield =
+				document.getElementById("total-expenses");
+			totalcosttextfield.innerText = totalcost;
+		});
+
 })
 
-// manager cost
-
-const managercost = getInputValue('')
