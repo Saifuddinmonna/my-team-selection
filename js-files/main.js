@@ -1,34 +1,7 @@
-// funtion for player name text and add player in the list
+
 
          
-	
 
-
-function getPlayerNameById(player) {
-	const player1 = document.getElementById(player);
-	const playerinnertext = player1.innerText;
-	// btnid4.setAttribute("disabled", "");
-	const playertext = playerinnertext;
-
-	console.log(playerinnertext);
-	let oderlistid = document.getElementById("selected-li");
-	const li = document.createElement("li");
-	li.innerText = playertext;
-	const numbers = oderlistid.appendChild(li);	
-	const linumbers = oderlistid.childElementCount;
-	console.log(linumbers);
-	if (linumbers > 5) {
-		const oderlistid2 = document.getElementById("player-list");
-		oderlistid.removeChild(li);
-		alert("your selection is full!");
-	}
-}
-	
-	// functionfor btn disabled
-	function disabledbtn(btnid) {
-		const playerbtn = document.getElementById(btnid);
-		playerbtn.setAttribute("disabled", "");
-	}
 
 
 // alert for 5 player selection
@@ -66,3 +39,20 @@ document.getElementById("btn-6").addEventListener("click", function (){
 	const player1add = getPlayerNameById("player-6");
 	disabledbtn("btn-6");
 })
+
+
+document.getElementById('calculate').addEventListener('click', function () {
+	const perplayercost = getInputValue("per-player-cost");
+	let oderlistid = document.getElementById("selected-li");
+	let linumbers = oderlistid.childElementCount;
+	const linumbernumber = parseFloat(linumbers);
+	const allPlayerCost =linumbers*perplayercost;
+	console.log(allPlayerCost);
+	const totalplayercostid = document.getElementById("total-player-expenses");
+	totalplayercostid.innerText = allPlayerCost;
+	// const totalplayercost = ;
+})
+
+// manager cost
+
+const managercost = getInputValue('')
