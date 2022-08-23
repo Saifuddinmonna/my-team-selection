@@ -11,7 +11,7 @@
         <div class=" mother-container container text-white">
              <header class="header-section  imag rounded-4 ">
                <div class="text-container  p-lg-5 p-md-5  w-50 m-auto " >
-                <h1 class="py-lg-4 fs-1 fw-bolder font text-center">
+                <h1 class="py-lg-4 fs-1 fw-bolder font text-center text-danger fs">
                         My  Favorite Team Selection
                 </h1>
                 <p class=" text-wrap text-justify text-center">Following football is a huge pastime for people around the world - so much so, that there are even two kinds of football! Whether you're a soccer fan or an American football fan, you've got to pick a favorite team,
@@ -21,9 +21,9 @@
                
              </header>  
              <main class="main-div rounded-5 my-5">
-                <div class="row">
-                        <div class="col-9 rounded-5 ">
-                                <div class=" rounded bg-dark row row-cols-4 d-flex justify-content-center align-items-md-center">
+                <div class="row mt-sm-5 align-items-sm-center align-items-center align-items-md-center mb-5">
+                        <div class="col-lg-9 col-md-6 rounded-5 ">
+                                <div class=" rounded bg-dark row row-cols-sm-1 row-cols-md-2 row-cols-lg-4   d-flex justify-content-center align-items-md-center">
                                 <div class="m-2 bg-dark rounded text-white text-center">
                                         <img  class="img-fluid rounded my-2 " src="pic-of-players/player1.png" 
                                         alt="">
@@ -78,9 +78,9 @@
                                         <button id="btn-6" class="btn text-white bg-primary px-4 py-1 d-block m-auto mb-3">SELECT</button>
 
                                 </div>
+                                </div>
                         </div>
-                        </div>
-                              <div id="calculation-div" class="col-3">
+                              <div id="calculation-div container" class="col">
                                         <div>
                                                 <div class="p-4  bg-dark rounded text-center">
                                                 <h3>Selected-V</h3> 
@@ -94,16 +94,16 @@
                                                 <hr class="h-7px  text-white ">  
                                                 <div class=" text-start">
                                                         
-                                                         <p>Per Player &nbsp $ </p>
-                                                         <input class="bg-dark border-light rounded text-light px-0  " id="per-player-cost" type="number">
+                                                         <p>Per Player $ <input class="bg-dark border-light rounded text-light px-0  " id="per-player-cost" type="number"></p>
+                                                         
                                                 
                                                         <button id="calculate" class="btn btn-primary px-5 m-2">Calculate</button><br> <br>
 
                                                         <p> All Player Expenses &nbsp $ &nbsp <span id="total-player-expenses"></span> </p><br>
 
-                                                        <p>Manager  &nbsp &nbsp &nbsp &nbsp <input  id="manager-cost" type="number"></p><br>
+                                                        <p>Manager  &nbsp &nbsp &nbsp &nbsp <input class="bg-dark border-light rounded text-light px-0"  id="manager-cost" type="number"></p><br>
 
-                                                        <p>Coach  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input id="coach-cost" type="number"></p><br>
+                                                        <p>Coach  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input class="bg-dark border-light rounded text-light px-0" id="coach-cost" type="number"></p><br>
 
                                                         <button id="total-cost" class="btn btn-primary px-5 m-2">Calculate Total</button><br><br>
 

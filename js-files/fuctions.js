@@ -13,10 +13,10 @@ function getPlayerNameById(player) {
 	const numbers = oderlistid.appendChild(li);
 	let linumbers = oderlistid.childElementCount;
 	
-	if (linumbers >4) {
+	if (linumbers >5) {
 		const oderlistid2 = document.getElementById("selected-li");
 		 oderlistid2.removeChild(oderlistid2.lastElementChild);
-		alert("your selection is full!");
+		alert("your  selection is full! You can't select now!!!!!");
 		console.log(linumbers);
 
 	}
