@@ -3,27 +3,35 @@
          
 	
 
-function getPlayerNameById(player) {
 
+function getPlayerNameById(player) {
 	const player1 = document.getElementById(player);
 	const playerinnertext = player1.innerText;
 	// btnid4.setAttribute("disabled", "");
 	const playertext = playerinnertext;
-	
 
 	console.log(playerinnertext);
-	const oderlistid = document.getElementById("selected-li");
+	let oderlistid = document.getElementById("selected-li");
 	const li = document.createElement("li");
 	li.innerText = playertext;
-	const numbers = oderlistid.appendChild(li);
-
+	const numbers = oderlistid.appendChild(li);	
+	const linumbers = oderlistid.childElementCount;
+	console.log(linumbers);
+	if (linumbers > 5) {
+		const oderlistid2 = document.getElementById("player-list");
+		oderlistid.removeChild(li);
+		alert("your selection is full!");
+	}
+}
 	
-}
-// functionfor btn disabled 
-function disabledbtn(btnid) {
-	const playerbtn = document.getElementById(btnid);
-	playerbtn.setAttribute("disabled", "");
-}
+	// functionfor btn disabled
+	function disabledbtn(btnid) {
+		const playerbtn = document.getElementById(btnid);
+		playerbtn.setAttribute("disabled", "");
+	}
+
+
+// alert for 5 player selection
 
 
 // functionCall for player 1 
