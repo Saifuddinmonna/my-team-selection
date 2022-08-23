@@ -7,3 +7,6 @@
         background-position: center;
         background-size: cover;
 }
+#calculation-div{
+        min-width: 3;
+}
