@@ -10,3 +10,11 @@
 #calculation-div{
         min-width: 3;
 }
+#selected-v #total-calculate{
+        height: 300px;
+        min-width: 200px;
+}
+ #total-calculate{
+        min-height: 400px;
+        min-width: 200px;
+}

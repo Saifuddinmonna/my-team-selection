@@ -20,8 +20,8 @@
                </div> 
                
              </header>  
-             <main class="main-div rounded-5 my-5">
-                <div class="row mt-sm-5 align-items-sm-center align-items-center align-items-md-center mb-5">
+             <main class="main-div rounded-5 mb-5">
+                <div class="row my-sm-5  align-items-sm-center align-items-center align-items-md-center mb-5">
                         <div class="col-lg-9 col-md-6 rounded-5 ">
                                 <div class=" rounded bg-dark row row-cols-sm-1 row-cols-md-2 row-cols-lg-4   d-flex justify-content-center align-items-md-center">
                                 <div class="m-2 bg-dark rounded text-white text-center">
@@ -37,7 +37,7 @@
                                         <img  class="img-fluid rounded my-2 " src="pic-of-players/player2.png" 
                                         alt="">
                                         <h4 id="player-2">Neymar Jr</h4>
-                                        <p> 36 Goals - 120 Assist
+                                        <p> 36 Goals-120 Assist
                                         </p>
                                         <button id="btn-2" class="btn text-white bg-primary px-4 py-1 d-block m-auto mb-3">SELECT</button>
 
@@ -46,7 +46,7 @@
                                         <img  class="img-fluid rounded my-2 " src="pic-of-players/player3.png" 
                                         alt="">
                                         <h4 id="player-3">Kylian Mbappé</h4>
-                                        <p> 36 Goals - 120 Assist
+                                        <p> 36 Goals-120 Assist
                                         </p>
                                         <button id="btn-3" class="btn text-white bg-primary px-4 py-1 d-block m-auto mb-3">SELECT</button>
 
@@ -55,7 +55,7 @@
                                         <img  class="img-fluid rounded my-2 " src="pic-of-players/player4.png" 
                                         alt="">
                                         <h4 id="player-4">Vítor Machado     </h4>
-                                        <p> 36 Goals - 120 Assist
+                                        <p> 36 Goals-120 Assist
                                         </p>
                                         <button id="btn-4" class="btn text-white bg-primary px-4 py-1 d-block m-auto mb-3">SELECT</button>
 
@@ -64,7 +64,7 @@
                                         <img  class="img-fluid rounded my-2 " src="pic-of-players/player5.png" 
                                         alt="">
                                         <h4 id="player-5">Sergio Ramos </h4>
-                                        <p> 36 Goals - 120 Assist
+                                        <p> 36 Goals-120 Assist
                                         </p>
                                         <button id="btn-5" class="btn text-white bg-primary px-4 py-1 d-block m-auto mb-3">SELECT</button>
 
@@ -73,7 +73,7 @@
                                         <img  class="img-fluid rounded my-2 " src="pic-of-players/player6.png" 
                                         alt="">
                                         <h4 id="player-6">Renato Sanches</h4>
-                                        <p> 36 Goals - 120 Assist
+                                        <p> 36 Goals-120 Assist
                                         </p>
                                         <button id="btn-6" class="btn text-white bg-primary px-4 py-1 d-block m-auto mb-3">SELECT</button>
 
@@ -82,8 +82,8 @@
                         </div>
                               <div id="calculation-div container" class="col">
                                         <div>
-                                                <div class="p-4  bg-dark rounded text-center">
-                                                <h3>Selected-V</h3> 
+                                                <div id="selected-v" class="p-2 mb-2 mt-4 bg-dark rounded text-start  ">
+                                                <h3 class="d-block text-center p-4 text-bg-primary">Selected-V</h3> 
                                                 <hr class="h-7px  text-white ">  
                                                 <div>
                                                         <ol id="selected-li" class="h-auto text-white ps-2 m-5 fs-5 fst-italic min-"></ol>
@@ -92,12 +92,12 @@
                                                 <div class="p-4  bg-dark rounded text-center">
                                                 <h3>Budget</h3> 
                                                 <hr class="h-7px  text-white ">  
-                                                <div class=" text-start">
+                                                <div id="total-calculate" class=" text-start ">
                                                         
                                                          <p>Per Player $ <input class="bg-dark border-light rounded text-light px-0  " id="per-player-cost" type="number"></p>
                                                          
                                                 
-                                                        <button id="calculate" class="btn btn-primary px-5 m-2">Calculate</button><br> <br>
+                                                        <button id="calculate" class=" btn btn-primary d-block m-auto px-5 ">&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp Calculate &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp</button><br> <br>
 
                                                         <p> All Player Expenses &nbsp $ &nbsp <span id="total-player-expenses"></span> </p><br>
 
@@ -105,9 +105,9 @@
 
                                                         <p>Coach  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input class="bg-dark border-light rounded text-light px-0" id="coach-cost" type="number"></p><br>
 
-                                                        <button id="total-cost" class="btn btn-primary px-5 m-2">Calculate Total</button><br><br>
+                                                        <button id="total-cost" class="btn btn-primary px-5 m-auto d-block ">&nbsp &nbsp &nbsp  &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp Calculate Total &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp</button><br><br>
 
-                                                        <p> Total &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp$ <span id="total-expenses"></span> </p>
+                                                        <p class="fs-5"> Total &nbsp &nbsp &nbsp  &nbsp &nbsp$ <span class="text-danger fs-5" id="total-expenses"></span> </p>
                                                        
                                                     
                                                 </div>
