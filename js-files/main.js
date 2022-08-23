@@ -2,11 +2,6 @@
 
          
 
-
-
-// alert for 5 player selection
-
-
 // functionCall for player 1 
 
 document.getElementById("btn-1").addEventListener("click", function () { 
@@ -19,27 +14,34 @@ document.getElementById("btn-2").addEventListener("click", function (){
 	const player1add = getPlayerNameById("player-2");
 	disabledbtn("btn-2");
 })
+
 // functionCall for player 3
 document.getElementById("btn-3").addEventListener("click", function (){
 	const player1add = getPlayerNameById("player-3");
 	disabledbtn("btn-3");
 })
+
 // functionCall for player 4
 document.getElementById("btn-4").addEventListener("click", function (){
 	const player1add = getPlayerNameById("player-4");
 	disabledbtn("btn-4");
 })
+
 // functionCall for player 5
 document.getElementById("btn-5").addEventListener("click", function (){
 	const player1add = getPlayerNameById("player-5");
 	disabledbtn("btn-5");
 })
-// functionCall for player 6
+
+
+// functionCall for player 6////
+
 document.getElementById("btn-6").addEventListener("click", function (){
 	const player1add = getPlayerNameById("player-6");
 	disabledbtn("btn-6");
 })
 
+//// calculate cost starting from here /////////
 
 document.getElementById('calculate').addEventListener('click', function () {
 	const perplayercost = getInputValue("per-player-cost");
@@ -54,7 +56,9 @@ document.getElementById('calculate').addEventListener('click', function () {
 	const totalplayercoststring = totalplayercostid.innerText;
 	const totalplayercostnumber = parseFloat(totalplayercoststring); 
 
-	// total cost codinr start from here 
+
+
+	// total cost coding start from here ////
 	document
 		.getElementById("total-cost")
 		.addEventListener("click", function () {

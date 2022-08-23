@@ -1,4 +1,9 @@
-// funtion for player name text and add player in the list
+
+// ////////////////////
+//some common functions for callback //
+//////////////////////////
+
+//  funtion for player name text and add player in the list
 
 function getPlayerNameById(player) {
 	const player1 = document.getElementById(player);
@@ -12,21 +17,26 @@ function getPlayerNameById(player) {
 	li.innerText = playertext;
 	const numbers = oderlistid.appendChild(li);
 	let linumbers = oderlistid.childElementCount;
-	
-	if (linumbers >5) {
+
+	///// alert for 5 player selection/////
+
+	if (linumbers > 5) {
 		const oderlistid2 = document.getElementById("selected-li");
-		 oderlistid2.removeChild(oderlistid2.lastElementChild);
+		oderlistid2.removeChild(oderlistid2.lastElementChild);
 		alert("your  selection is full! You can't select now!!!!!");
 		console.log(linumbers);
-
 	}
 }
 
-// functionfor btn disabled
+// /////function for btn disabled////
+
 function disabledbtn(btnid) {
 	const playerbtn = document.getElementById(btnid);
 	playerbtn.setAttribute("disabled", "");
 }
+
+
+// ///////// funtion for geting value from a input field //////
 
 function getInputValue(inputfieldId) {
         
