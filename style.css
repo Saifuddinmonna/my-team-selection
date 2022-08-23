@@ -1,0 +1,9 @@
+
+.header-section{
+        background-image: url(pic-of-players/headerpic.png);
+        border-radius: 14px;
+        background-repeat: no-repeat;
+        height: 428px;
+        background-position: center;
+        background-size: cover;
+}
